@@ -1,0 +1,80 @@
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --fg-light-color: #FFFFFF;
+    --fg-dark-color: #23272A;
+    --bg-light-color: #F6F6F6;
+    --bg-dark-color: #23272A;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', 'Times New Roman', Times, serif;
+}
+
+body header {
+    background-image: url('../images/header_bg.svg');
+    background-position: 74% 75%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    padding: 15% 5%;
+}
+
+header .access {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.access h1 {
+    font-family: 'Luckiest Guy', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--fg-light-color);
+    font-size: 2rem;
+    max-width: 70%;
+    letter-spacing: 0.08rem;
+}
+
+.access p {
+    color: var(--fg-light-color);
+    font-weight: 350;
+    font-size: 1rem;
+    letter-spacing: 0.018rem;
+}
+
+.access button {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem 0;
+    border: solid 1px transparent;
+    border-radius: 2rem;
+    font-weight: 400;
+}
+
+.access button:first-of-type {
+    margin-bottom: 5%;
+    background-color: var(--bg-light-color);
+    color: var(--fg-dark-color);
+}
+
+.access button:last-of-type {
+    background-color: var(--bg-dark-color);
+    color: var(--fg-light-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15% 5%;
+}
+
+main .spaces {
+    width: 100%;
+}
+
+main .spaces img {
+    width: 100%;
+}
